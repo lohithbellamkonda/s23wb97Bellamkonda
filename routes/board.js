@@ -3,7 +3,8 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Lohith Vamshi Bellamkonda' });
+  let query=req.query
+res.render('board',{ title: 'Board Display' ,query:query});
 });
 
 module.exports = router;
